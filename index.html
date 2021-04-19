@@ -1,45 +1,72 @@
+<!--Indica la version del html  --> 
 <!DOCTYPE html>
+
+<!--Inicio de HTML lenguaje español -->
 <html lang="es">
+
+    <!--Cabecera de la pagina -->
     <head>
+        <!-- Descripcion de la pagina -->
         <meta charset="utf-8"/>
         <meta name="viweport" content="width=device-width, initial-scale=1.0"/>
         <title> Restaurante  </title>
-        <meta name="description" content="Esta es mi primer pagina web"/>
-        <meta name="author" content=" Alejandro"/>
+        <meta name="description" content="Restaurante"/>
+        <meta name="author" content="Equipo 5"/>
         <meta name="keywords" content="Restaurante, Comida, platos, ingredientes, recetas"/> 
+
+        <!-- Enlace que lleva a la pestaña de formulario en css -->
         <link rel="stylesheet" href="estilos.css">
+
+        <!-- Buscando una api para una fuente (tipo de letra) externa -->
         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&displays=swap" rel="stylesheet">
 
     </head>
 
+    <!-- Cuerpo de la pagina -->
     <body>
+
+        <!-- Formulario para almacenar los datos -->
         <form action="" method="POST" id="form">
             <div class="form">
-              <h1>Registro</h1>  
+
+              <h1>Registro</h1>  <!-- Titulo del formulario , se puede editar color y las fonts(del api) -->
+
+              <!-- Nombre -->
               <div class="grupo">
                   <input type="text" name="" id="name" required><span class="barra"></span>
                   <label for="">Nombre</label>
                 </div>
+
+                <!-- Correo electronico -->
                 <div class="grupo">
                     <input type="email" name="" id="name" required><span class="barra"></span>
                     <label for="">Correo electronico</label>
                   </div>
+
+                  <!-- Contraseña , En otros lugares de proyecto de puede ver como password-->
                   <div class="grupo">
                     <input type="password" name="" id="name" required><span class="barra"></span>
-                    <label for="">Password</label>
+                    <label for="">Contraseña</label>
                   </div>
+
+                  <!-- Numero de telefono de tipo number ya que es el unico tipo que almacena cadena de numero en form-->
                   <div class="grupo">
                     <input type="number" name="" id="name" required><span class="barra"></span>
                     <label for="">Telefono</label>
                   </div>
+
+                  <!-- Ocupación en texto libre -->
                   <div class="grupo">
                     <input type="text" name="" id="name" required><span class="barra"></span>
                     <label for="">Ocupacion</label>
                   </div>
 
+                  <!-- Botón que valida el formulario y permite ingresar -->
                   <button type="Enviar"> Ingresar</button>
             </div>
         </form>
+        
+        <!-- Enlace que lleva a la pestaña de Javascript -->
         <script src="main.js"></script>
     </body>
 </html>
