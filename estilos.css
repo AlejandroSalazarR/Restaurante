@@ -1,7 +1,9 @@
+/*Creando una funcion root para usar este color en el proyecto */
 :root{
     --colorTextos: #49454567;
 }
 
+/*Alterando todos los parametros de imagen por defecto*/
 *,
 ::before,
 ::after{
@@ -10,10 +12,12 @@
         box-sizing: border-box;
 }
 
+/*Alterando el cuerpo en un color de gradado y ajustando la medida*/
+
 body{
     font-family: 'Roboto';
     background: #F2994A;
-      /* fallback for old browsers */
+      /* El background adaptable para los buscadores mas antiguos */
     background: -webkit-linear-gradient(to left, #F2C94C, #F2994A);
       /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to left, #F2C94C, #F2994A);
@@ -25,11 +29,13 @@ body{
     align-items: center;
 }
 
+/*El tamaño del texto, registro */
 h1{
     text-align: center;
     font-weight: 700;
 }
 
+/* El tamaño del form y se le quitan los bordes */
 form{
     background: white;
     padding: 40px 25px; /* Por el momento 25 horizontales */
@@ -37,18 +43,21 @@ form{
     border-radius: 10px;
 }
 
+/* Para crear un margen y un espaciado dentro de cuadro form sin afectar el original */
 .form{
     width: 100%;
     margin: auto;
     
 }
 
+/* Se crea un espaciado horizontal entre los cuadros de texto del formulario*/
 form .grupo{
     position: relative;
-    margin: 35px ;/* Pongo 40 pero se puede reducir */
+    margin: 35px ;/* Pongo 35 pero se puede reducir */
     
 }
 
+/*Se crea un espacio vertical entre los cuadros de texto del formulario*/
 input{
     background: none;
     color: #c6c6c6;
@@ -60,11 +69,13 @@ input{
     border-bottom: 1px solid var(--colorTextos);
 }
 
+/*Cuando estemos enfocados en un cuadro en especifico ponemos el color #5e5d5d */
 input:focus{
     outline: none;
     color: #5e5d5d;
 }
 
+/* La posicion de la etiqueta dentro del cuadro de texto*/
 label{
     color: var(--colorTextos);
     font-size: 16px;
@@ -75,6 +86,7 @@ label{
     pointer-events: none;
 }
 
+/* Al tener un focus en el cuadro la etiqueta pasa -15px arriba para que no se sobre ponga el texto*/
 input:focus~label,
 input:valid~label{
     top: -15px;
@@ -82,12 +94,14 @@ input:valid~label{
     color: #2196f3;
 }
 
+/* */
 .barra{
     position: relative;
     display: block;
     width: 100%;
 }
 
+/* La barra se pone del color del background */
 .barra::before{
     content: "";
     height: 2px;
@@ -99,10 +113,12 @@ input:valid~label{
     left: 0px;
 }
 
+/*Para alterar solo la barra en el momento que se selecciona dandole el 100%*/
 input:focus~.barra::before{
         width: 100%;
 }
 
+/* Tamaño y color del boton del mismo color del background del body*/
 button{
     font-family: 'roboto';
     background: #F2994A;
@@ -121,6 +137,7 @@ button{
     cursor: pointer;
 }
 
+/* Se usa para que el programa pueda ser responsive y con 500px se ajuste */
 @media screen and (max-width:500px) {
     form{
         width: 80%;
