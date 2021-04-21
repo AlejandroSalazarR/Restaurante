@@ -118,6 +118,19 @@ input:focus~.barra::before{
         width: 100%;
 }
 
+
+/* */
+.warnings{
+width: 200px;
+text-align: center;
+margin: auto;
+color: #B06AB3;
+padding-top: 20px;
+
+}
+
+
+
 /* Tamaño y color del boton del mismo color del background del body*/
 button{
     font-family: 'roboto';
